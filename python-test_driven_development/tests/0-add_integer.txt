@@ -30,3 +30,10 @@ pas un nombre :
     >>> add_integer(float('nan'))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
+
+check chiffre :
+    >>> add_integer("4", 1)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+
