@@ -14,5 +14,9 @@ b par défaut (98) :
     100
 
 Test float : 
-    >>> add_integer(2.9, 0.1)
+    >>> add_integer(2.9, 0.7)
     2
+
+Test float negatif :
+    >>> add_integer(100.1, -2)
+    98
