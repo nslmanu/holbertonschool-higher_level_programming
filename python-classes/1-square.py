@@ -5,8 +5,6 @@
 class Square:
     """Module classe Square vide."""
 
-
     def __init__(self, size):
         """Size prive"""
         self.__size = size
-
