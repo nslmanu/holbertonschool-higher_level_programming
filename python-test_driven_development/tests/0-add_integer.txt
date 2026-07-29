@@ -26,6 +26,7 @@ Float overflow :
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
 
-Not a number :
-    >>> int(float('nan'))
+pas un nombre :
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
