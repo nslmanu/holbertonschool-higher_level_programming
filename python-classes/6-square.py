@@ -55,7 +55,7 @@ class Square:
     def area(self):
         """Retourne l'aire du carré."""
         return self.__size ** 2
-    
+
     def my_print(self):
         """Affiche le carré avec des #, décalé selon position."""
         if self.__size == 0:
