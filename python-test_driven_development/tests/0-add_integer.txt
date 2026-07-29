@@ -14,5 +14,5 @@ b par défaut (98) :
     100
 
 Test float : 
-    >>> isinstance(98, float)
-    False
+    >>> add_integer(2.9, 0.1)
+    2
