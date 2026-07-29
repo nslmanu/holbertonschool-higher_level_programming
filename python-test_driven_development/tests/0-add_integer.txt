@@ -22,5 +22,7 @@ Test float negatif :
     98
 
 Float overflow :
-    >>> add_integer(100.3, -2)
-    98
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
