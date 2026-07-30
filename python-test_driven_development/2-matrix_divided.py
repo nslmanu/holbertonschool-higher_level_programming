@@ -1,17 +1,33 @@
 #!/usr/bin/python3
-"""addition d'entiers
+"""Matrix à diviser.
 
-add_integer ajoute deux nombres
-après validation et format en int.
+div must be a number (integer or float), otherwise
+raise a TypeError exception with the message
+div must be a number
+div can't be equal to 0, otherwise raise
+a ZeroDivisionError exception with the
+message division by zero
 """
 
 
-def add_integer(a, b=98):
-    """addition de a et b, bkp en int.
-    result TypeError si a ou b n'est ni int ni float.
+def matrix_divided(matrix, div):
+    """div must be a number (integer or float),
+    otherwise raise a TypeError exception with
+    the message div must be a number
+
+    div can't be equal to 0, otherwise
+    raise a ZeroDivisionError
+    exception with the message division by zero
     """
-    if not isinstance(a, (int, float)):
-        raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
-        raise TypeError("b must be an integer")
-    return int(a) + int(b)
+    if (not isinstance(matrix, list) or len(matrix) == 0 or
+            not all(isinstance(row, list) for row in matrix) or
+            not all(isinstance(n, (int, float))
+                    for row in matrix for n in row)):
+        raise TypeError(err)
+    if not all(len(row) == len(matrix[0]) for row in matrix):
+        raise TypeError("Each row MUST have the same size")
+    if not isinstance(div, (int, float)):
+        raise TypeError("div MUST be number")
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+    return [[round(n / div, 2) for n in row] for row in matrix]
