@@ -9,6 +9,9 @@ class TestMaxInteger(unittest.TestCase):
     """Tests de la fonction max_integer."""
 
     def test_ordered_list(self):
-        """Liste ordonnée."""
+        """Liste ordre"""
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
 
+    def test_liste_chars(self):
+        """Liste strings ordre alpha"""
+        self.assertEqual(max_integer(["a", "z", "c"]), "z")
