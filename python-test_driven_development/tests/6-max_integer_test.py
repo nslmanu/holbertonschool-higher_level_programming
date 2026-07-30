@@ -27,3 +27,9 @@ class TestMaxInt(unittest.TestCase):
     def test_empty_list(self):
         """Liste vide None."""
         self.assertIsNone(max_integer([]))
+
+    def test_one_list(self):
+        """Liste one."""
+        self.assertEqual(max_integer([1]), 1)
+
+
