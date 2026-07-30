@@ -4,3 +4,13 @@ Import :
 Prénom et nom :
     >>> say_my_name("John", "Smith")
     My name is John Smith
+
+first_name invalide :
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+last_name invalide :
+    >>> say_my_name("White", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
