@@ -6,3 +6,9 @@ Texte simple :
     Test.
     <BLANKLINE>
     mot
+
+doit etre une string :
+    >>> text_indentation(26)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
