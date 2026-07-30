@@ -23,3 +23,7 @@ class TestMaxInt(unittest.TestCase):
     def test_first_max(self):
         """Liste max first"""
         self.assertEqual(max_integer([1, 0.1, 0.4, 0.3]), 1)
+
+    def test_empty_list(self):
+        """Liste vide None."""
+        self.assertIsNone(max_integer([]))
