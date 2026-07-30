@@ -19,3 +19,7 @@ class TestMaxInt(unittest.TestCase):
     def test_float_max(self):
         """Liste max float"""
         self.assertEqual(max_integer([0.1, 0.4, 0.3]), 0.4)
+
+    def test_first_max(self):
+        """Liste max first"""
+        self.assertEqual(max_integer([1, 0.1, 0.4, 0.3]), 1)
