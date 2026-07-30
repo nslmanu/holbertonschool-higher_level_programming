@@ -1,0 +1,9 @@
+Import :
+    >>> print_square = __import__('4-print_square').print_square
+
+Carré de 4 :
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
