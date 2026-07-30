@@ -15,3 +15,7 @@ class TestMaxInt(unittest.TestCase):
     def test_list_chars(self):
         """Liste strings ordre alpha"""
         self.assertEqual(max_integer(["a", "z", "c"]), "z")
+
+    def test_float_max(self):
+        """Liste max float"""
+        self.assertEqual(max_integer([0.1, 0.4, 0.3]), 0.4)
